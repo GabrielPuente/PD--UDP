@@ -15,7 +15,7 @@ namespace UDP
             //var bytes = Encoding.UTF8.GetBytes(message);
             //var ep = new IPEndPoint(address, port);
             //socket.SendTo(bytes, ep);
-            //port = 60000;
+            //port = 60000; 
 
             var address = IPAddress.Parse(ip);
             var bytes = Encoding.UTF8.GetBytes("Heartbeat Reply");
