@@ -23,8 +23,15 @@ namespace UDP
                     Console.WriteLine(message);
 
                     if (message.ToLower().Contains(hr))
+                    {
+                        var objip = Program.UserList.Find(u => u.Ip == ip.Address.ToString());
+                        if (objip.Retry > 1)
+                        {
+                            objip.Retry = 0;
+                        }
                         Client.Send(socket, ip.Address.ToString());
-                }             
+                    }
+                }
             }
             catch (SocketException e)
             {
