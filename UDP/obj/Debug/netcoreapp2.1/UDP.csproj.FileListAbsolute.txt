@@ -9,3 +9,14 @@ C:\Users\140969\Downloads\UDP\UDP\obj\Debug\netcoreapp2.1\UDP.AssemblyInfoInputs
 C:\Users\140969\Downloads\UDP\UDP\obj\Debug\netcoreapp2.1\UDP.AssemblyInfo.cs
 C:\Users\140969\Downloads\UDP\UDP\obj\Debug\netcoreapp2.1\UDP.dll
 C:\Users\140969\Downloads\UDP\UDP\obj\Debug\netcoreapp2.1\UDP.pdb
+C:\GitHub\PD--UDP\UDP\bin\Debug\netcoreapp2.1\UDP.deps.json
+C:\GitHub\PD--UDP\UDP\bin\Debug\netcoreapp2.1\UDP.runtimeconfig.json
+C:\GitHub\PD--UDP\UDP\bin\Debug\netcoreapp2.1\UDP.runtimeconfig.dev.json
+C:\GitHub\PD--UDP\UDP\bin\Debug\netcoreapp2.1\UDP.dll
+C:\GitHub\PD--UDP\UDP\bin\Debug\netcoreapp2.1\UDP.pdb
+C:\GitHub\PD--UDP\UDP\obj\Debug\netcoreapp2.1\UDP.csprojAssemblyReference.cache
+C:\GitHub\PD--UDP\UDP\obj\Debug\netcoreapp2.1\UDP.csproj.CoreCompileInputs.cache
+C:\GitHub\PD--UDP\UDP\obj\Debug\netcoreapp2.1\UDP.AssemblyInfoInputs.cache
+C:\GitHub\PD--UDP\UDP\obj\Debug\netcoreapp2.1\UDP.AssemblyInfo.cs
+C:\GitHub\PD--UDP\UDP\obj\Debug\netcoreapp2.1\UDP.dll
+C:\GitHub\PD--UDP\UDP\obj\Debug\netcoreapp2.1\UDP.pdb

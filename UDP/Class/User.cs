@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace UDP.Class
 {
     public class User
     {
-        public User() {
+        public User()
+        {
             Alive = true;
             Retry = 0;
             Leader = false;

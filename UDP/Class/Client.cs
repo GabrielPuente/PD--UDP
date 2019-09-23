@@ -10,7 +10,7 @@ namespace UDP
         public static void Send(Socket socket, string ip, int port = 60000)
         {
             string hr = "Heartbeat Reply";
-            
+
             var address = IPAddress.Parse(ip);
             var bytes = Encoding.UTF8.GetBytes(hr);
             var ep = new IPEndPoint(address, port);

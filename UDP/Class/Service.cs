@@ -8,9 +8,10 @@ namespace UDP
     public class Service
     {
         private const int port = 60000;
+        private const string hr = "heartbeat request";
+
         public static void ReceiveMessage()
         {
-            string hr = "heartbeat request";
             var client = new UdpClient(port);
             var ip = new IPEndPoint(IPAddress.Any, port);
             var socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
@@ -24,11 +25,14 @@ namespace UDP
 
                     if (message.ToLower().Contains(hr))
                     {
-                        var objip = Program.UserList.Find(u => u.Ip == ip.Address.ToString());
-                        if (objip.Retry > 1)
-                        {
-                            objip.Retry = 0;
-                        }
+                        var user = Program.FindUser(ip.Address.ToString());
+                        Program.Reset(user);
+
+                        var newLeader = Program.HasPriority(user);
+
+                        if(newLeader)
+                            Program.SwapLeader();
+
                         Client.Send(socket, ip.Address.ToString());
                     }
                 }
