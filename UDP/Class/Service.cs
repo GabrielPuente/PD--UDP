@@ -21,7 +21,6 @@ namespace UDP
                 {
                     byte[] bytes = client.Receive(ref ip);
                     var message = $"\n{ip.Address.ToString()}:\t{Encoding.UTF8.GetString(bytes, 0, bytes.Length)}";
-                    Console.WriteLine(message);
 
                     if (message.ToLower().Contains(hr))
                     {
@@ -30,9 +29,11 @@ namespace UDP
 
                         var newLeader = Program.HasPriority(user);
 
-                        if(newLeader)
+                        if (newLeader)
                             Program.SwapLeader();
 
+                        var txt = user.Leader ? $"{message} - Leader" : $"{message}";
+                        Console.WriteLine(txt);
                         Client.Send(socket, ip.Address.ToString());
                     }
                 }
